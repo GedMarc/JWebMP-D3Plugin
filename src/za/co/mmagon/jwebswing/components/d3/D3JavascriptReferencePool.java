@@ -21,28 +21,29 @@ import za.co.mmagon.jwebswing.base.references.JavascriptReference;
 /**
  * References for all the graphing Java Scripts
  * <p>
+ *
  * @author Marc Magon
- * @since 08 Aug 2015
  * @version 1.0
+ * @since 08 Aug 2015
  */
 public enum D3JavascriptReferencePool
 {
-
-    /**
-     * The basic core for the graphing system
-     */
-    D3DrawingLibrary(new JavascriptReference("d3", 3.55, "bower_components/d3/d3.js", "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.js")),;
-    private final JavascriptReference reference;
-
-    private D3JavascriptReferencePool(JavascriptReference reference)
-    {
-        this.reference = reference;
-
-    }
-
-    public JavascriptReference getReference()
-    {
-        return reference;
-    }
-
+	
+	/**
+	 * The basic core for the graphing system
+	 */
+	D3DrawingLibrary(new JavascriptReference("d3", 3.55, "bower_components/d3/d3.js", "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.js")),;
+	private final JavascriptReference reference;
+	
+	private D3JavascriptReferencePool(JavascriptReference reference)
+	{
+		this.reference = reference;
+		
+	}
+	
+	public JavascriptReference getReference()
+	{
+		return reference;
+	}
+	
 }

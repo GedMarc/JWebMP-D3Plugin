@@ -19,33 +19,33 @@ package za.co.mmagon.jwebswing.components.d3;
 import za.co.mmagon.jwebswing.base.references.JavascriptReference;
 
 /**
- *
  * @author Marc Magon
- * @since 29 Aug 2015
  * @version 1.0
+ * @since 29 Aug 2015
  */
 public enum D3ReferencePool
 {
-
-    RadialReingoldTilfordTree(new JavascriptReference("radialReingold", 1.0, "javascript/jquery/tree/radialReingoldTilfordTree.js", "javascript/jquery/tree/radialReingoldTilfordTree.js")),
-    ReingoldTilfordTree(new JavascriptReference("reingold", 1.0, "javascript/jquery/tree/reingoldTilfordTree.js", "javascript/jquery/tree/reingoldTilfordTree.js")),;
-
-    private final JavascriptReference reference;
-
-    private D3ReferencePool(JavascriptReference reference)
-    {
-        this.reference = reference;
-
-    }
-
-    /**
-     * Returns the reference for this tree
-     * <p>
-     * @return
-     */
-    public JavascriptReference getReference()
-    {
-        return reference;
-    }
-
+	
+	RadialReingoldTilfordTree(new JavascriptReference("radialReingold", 1.0, "javascript/jquery/tree/radialReingoldTilfordTree.js", "javascript/jquery/tree/radialReingoldTilfordTree.js")),
+	ReingoldTilfordTree(new JavascriptReference("reingold", 1.0, "javascript/jquery/tree/reingoldTilfordTree.js", "javascript/jquery/tree/reingoldTilfordTree.js")),;
+	
+	private final JavascriptReference reference;
+	
+	private D3ReferencePool(JavascriptReference reference)
+	{
+		this.reference = reference;
+		
+	}
+	
+	/**
+	 * Returns the reference for this tree
+	 * <p>
+	 *
+	 * @return
+	 */
+	public JavascriptReference getReference()
+	{
+		return reference;
+	}
+	
 }
