@@ -806,7 +806,7 @@
         }
     };
 
-    function get (type, name) {
+    function get(type, name) {
         for (var i = 0, n = type.length, c; i < n; ++i) {
             if ((c = type[i]).name === name) {
                 return c.value;
@@ -814,7 +814,7 @@
         }
     }
 
-    function set (type, name, callback) {
+    function set(type, name, callback) {
         for (var i = 0, n = type.length; i < n; ++i) {
             if (type[i].name === name) {
                 type[i] = noop, type = type.slice(0, i).concat(type.slice(i + 1));
@@ -12324,7 +12324,7 @@
             start = interval.ceil(start);
             step = step == null ? 1 : Math.floor(step);
             if (!(start < stop) || !(step > 0)) return range; // also handles Invalid Date
-            do range.push(new Date(+start)); while (offseti(start, step), floori(start), start < stop)
+            do range.push(new Date(+start)); while (offseti(start, step), floori(start), start < stop);
             return range;
         };
 
