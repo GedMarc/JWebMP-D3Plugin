@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project name="D3Plugin" default="default" basedir=".">
-    <description>Builds, tests, and runs the project D3Plugin.</description>
-    <import file="nbproject/build-impl.xml"/>
-</project>
-
-
