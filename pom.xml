@@ -39,7 +39,7 @@
         <test.dir>test</test.dir>
         <additionalparam>-Xdoclint:none</additionalparam>
         <maven.jar.version>3.0.2</maven.jar.version>
-        <maven.dependency.version>3.0.2</maven.dependency.version>
+        <maven.dependency.version>3.0.1</maven.dependency.version>
         <maven.javadoc.version>2.10.4</maven.javadoc.version>
         <maven.source.version>2.1.2</maven.source.version>
         <maven.resources.version>3.0.2</maven.resources.version>
