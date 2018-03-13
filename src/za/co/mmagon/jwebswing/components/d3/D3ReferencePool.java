@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -25,18 +25,19 @@ import za.co.mmagon.jwebswing.base.references.JavascriptReference;
  */
 public enum D3ReferencePool
 {
-	
-	RadialReingoldTilfordTree(new JavascriptReference("radialReingold", 1.0, "javascript/jquery/tree/radialReingoldTilfordTree.js", "javascript/jquery/tree/radialReingoldTilfordTree.js")),
-	ReingoldTilfordTree(new JavascriptReference("reingold", 1.0, "javascript/jquery/tree/reingoldTilfordTree.js", "javascript/jquery/tree/reingoldTilfordTree.js")),;
-	
+
+	D3(new JavascriptReference("d3", 1.0, "//d3js.org/d3.v3.min.js")),
+	//bower_components/d3/d3.min.js")),
+	D3Layout(new JavascriptReference("d3Layout", 1.0, "d3custom/d3.layout.js")),;
+
 	private final JavascriptReference reference;
-	
-	private D3ReferencePool(JavascriptReference reference)
+
+	D3ReferencePool(JavascriptReference reference)
 	{
 		this.reference = reference;
-		
+
 	}
-	
+
 	/**
 	 * Returns the reference for this tree
 	 * <p>
@@ -47,5 +48,5 @@ public enum D3ReferencePool
 	{
 		return reference;
 	}
-	
+
 }

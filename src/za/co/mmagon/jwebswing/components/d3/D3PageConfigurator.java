@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -25,7 +25,9 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
  */
 @PluginInformation(pluginName = "D3 Graphing",
 		pluginUniqueName = "d3",
-		pluginDescription = "D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation. ",
+		pluginDescription = "D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives "
+				                    + "you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven "
+				                    + "approach to DOM manipulation. ",
 		pluginVersion = "1.4.1",
 		pluginDependancyUniqueIDs = "jquery",
 		pluginCategories = "d3, graphing, reports, graphs",
@@ -37,17 +39,24 @@ import za.co.mmagon.jwebswing.plugins.PluginInformation;
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/D3Plugin.jar/download",
 		pluginIconUrl = "bower_components/d3/icon.jpg",
 		pluginIconImageUrl = "bower_components/d3/example.png",
-		pluginLastUpdatedDate = "2017/03/04"
-)
-public class D3PageConfigurator extends PageConfigurator
+		pluginLastUpdatedDate = "2017/03/04")
+public class D3PageConfigurator
+		extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	@Override
 	public Page configure(Page page)
 	{
+		if (!page.isConfigured())
+		{
+			page.getBody()
+			    .addJavaScriptReference(D3ReferencePool.D3.getReference());
+			//page.getBody()
+			//    .addJavaScriptReference(D3ReferencePool.D3Layout.getReference());
+		}
 		return page;
 	}
-	
+
 }
