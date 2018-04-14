@@ -14,20 +14,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.d3;
+package com.jwebmp.components.d3;
 
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.plugins.PluginInformation;
 
 /**
  * @author GedMarc
  */
 @PluginInformation(pluginName = "D3 Graphing",
 		pluginUniqueName = "d3",
-		pluginDescription = "D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives "
-				                    + "you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven "
-				                    + "approach to DOM manipulation. ",
+		pluginDescription = "D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives " + "you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven " + "approach to DOM manipulation. ",
 		pluginVersion = "1.4.1",
 		pluginDependancyUniqueIDs = "jquery",
 		pluginCategories = "d3, graphing, reports, graphs",

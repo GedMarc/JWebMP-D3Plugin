@@ -14,9 +14,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.components.d3;
+package com.jwebmp.components.d3;
 
-import za.co.mmagon.jwebswing.base.references.JavascriptReference;
+import com.jwebmp.base.references.JavascriptReference;
 
 /**
  * @author Marc Magon
