@@ -51,8 +51,6 @@ public class D3PageConfigurator
 		{
 			page.getBody()
 			    .addJavaScriptReference(D3ReferencePool.D3.getReference());
-			//page.getBody()
-			//    .addJavaScriptReference(D3ReferencePool.D3Layout.getReference());
 		}
 		return page;
 	}
