@@ -26,8 +26,7 @@ import com.jwebmp.base.references.JavascriptReference;
 public enum D3ReferencePool
 {
 
-	D3(new JavascriptReference("d3", 1.0, "//d3js.org/d3.v3.min.js")),
-	//bower_components/d3/d3.min.js")),
+	D3(new JavascriptReference("d3", 1.0, "bower_components/d3/d3.min.js")),
 	D3Layout(new JavascriptReference("d3Layout", 1.0, "d3custom/d3.layout.js")),;
 
 	private final JavascriptReference reference;
