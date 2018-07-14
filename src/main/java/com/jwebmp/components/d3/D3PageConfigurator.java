@@ -25,7 +25,10 @@ import com.jwebmp.plugins.PluginInformation;
  */
 @PluginInformation(pluginName = "D3 Graphing",
 		pluginUniqueName = "d3",
-		pluginDescription = "D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives " + "you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven " + "approach to DOM manipulation. ",
+		pluginDescription =
+				"D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives " +
+				"you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven " +
+				"approach to DOM manipulation. ",
 		pluginVersion = "1.4.1",
 		pluginDependancyUniqueIDs = "jquery",
 		pluginCategories = "d3, graphing, reports, graphs",
