@@ -35,16 +35,16 @@ import javax.validation.constraints.NotNull;
 		pluginDependancyUniqueIDs = "jquery",
 		pluginCategories = "d3, graphing, reports, graphs",
 		pluginSubtitle = "Create stunning graphs using the D3 toolkit.",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-D3Plugin",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-D3Plugin",
 		pluginSourceUrl = "https://github.com/d3/d3",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-D3Plugin/wiki",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-D3Plugin/wiki",
 		pluginOriginalHomepage = "https://d3js.org/",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/D3Plugin.jar/download",
 		pluginIconUrl = "bower_components/d3/icon.jpg",
 		pluginIconImageUrl = "bower_components/d3/example.png",
 		pluginLastUpdatedDate = "2017/03/04")
 public class D3PageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<D3PageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
