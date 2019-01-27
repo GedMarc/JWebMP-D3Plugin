@@ -1,9 +1,3 @@
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.d3.D3PageConfigurator;
-import com.jwebmp.plugins.d3.implementations.D3ExclusionsModule;
-
 module com.jwebmp.plugins.d3 {
 	exports com.jwebmp.plugins.d3;
 
@@ -14,9 +8,9 @@ module com.jwebmp.plugins.d3 {
 	requires java.validation;
 	requires com.jwebmp.guicedinjection;
 
-	provides IPageConfigurator with D3PageConfigurator;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.d3.D3PageConfigurator;
 
-	provides IGuiceScanModuleExclusions with D3ExclusionsModule;
-	provides IGuiceScanJarExclusions with D3ExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.d3.implementations.D3ExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.d3.implementations.D3ExclusionsModule;
 
 }
