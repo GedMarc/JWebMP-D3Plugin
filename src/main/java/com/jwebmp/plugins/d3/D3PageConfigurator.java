@@ -18,6 +18,7 @@ package com.jwebmp.plugins.d3;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.services.IPageConfigurator;
 
 import jakarta.validation.constraints.NotNull;
@@ -29,8 +30,8 @@ import jakarta.validation.constraints.NotNull;
 		pluginUniqueName = "d3",
 		pluginDescription =
 				"D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives " +
-				"you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven " +
-				"approach to DOM manipulation. ",
+						"you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven " +
+						"approach to DOM manipulation. ",
 		pluginVersion = "1.4.1",
 		pluginDependancyUniqueIDs = "jquery",
 		pluginCategories = "d3, graphing, reports, graphs",
@@ -39,10 +40,16 @@ import jakarta.validation.constraints.NotNull;
 		pluginSourceUrl = "https://github.com/d3/d3",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-D3Plugin/wiki",
 		pluginOriginalHomepage = "https://d3js.org/",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/D3Plugin.jar/download",
-		pluginIconUrl = "bower_components/d3/icon.jpg",
-		pluginIconImageUrl = "bower_components/d3/example.png",
-		pluginLastUpdatedDate = "2017/03/04")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.graphing/jwebmp-d3",
+		pluginIconUrl = "",
+		pluginIconImageUrl = "",
+		pluginLastUpdatedDate = "2017/03/04",
+		pluginGroupId = "com.jwebmp.plugins.graphing",
+		pluginArtifactId = "jwebmp-d3",
+		pluginModuleName = "com.jwebmp.plugins.d3",
+		pluginStatus = PluginStatus.BaseCompleted
+		
+)
 public class D3PageConfigurator
 		implements IPageConfigurator<D3PageConfigurator>
 {
@@ -50,7 +57,7 @@ public class D3PageConfigurator
 	 * If this configurator is enabled
 	 */
 	private static boolean enabled = true;
-
+	
 	/**
 	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
 	 * <p>
@@ -62,20 +69,19 @@ public class D3PageConfigurator
 	{
 		return D3PageConfigurator.enabled;
 	}
-
+	
 	/**
 	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
 	 * <p>
 	 * If this configurator is enabled
 	 *
-	 * @param mustEnable
-	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * @param mustEnable the enabled of this AngularAnimatedChangePageConfigurator object.
 	 */
 	public static void setEnabled(boolean mustEnable)
 	{
 		D3PageConfigurator.enabled = mustEnable;
 	}
-
+	
 	@NotNull
 	@Override
 	public Page configure(Page page)
@@ -87,11 +93,11 @@ public class D3PageConfigurator
 		}
 		return page;
 	}
-
+	
 	@Override
 	public boolean enabled()
 	{
 		return D3PageConfigurator.enabled;
 	}
-
+	
 }
