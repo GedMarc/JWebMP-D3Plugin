@@ -9,7 +9,7 @@ public class D3PageConfiguratorTest
 	@Test
 	public void isEnabled()
 	{
-		Page p = new Page();
+		Page<?> p = new Page();
 		System.out.println(p.toString(true));
 	}
 }
