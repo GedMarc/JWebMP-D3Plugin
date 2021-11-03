@@ -10,7 +10,7 @@
     <groupId>com.jwebmp.plugins.graphing</groupId>
     <artifactId>jwebmp-d3</artifactId>
     <packaging>jar</packaging>
-
+    <version>0.0.0_0-SNAPSHOT</version>
     <name>D3 Plugin</name>
     <description>The JWebSwing implementation for D3 Graphing</description>
     <url>https://github.com/GedMarc/D3-Plugin</url>
