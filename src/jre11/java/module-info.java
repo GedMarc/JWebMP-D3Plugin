@@ -4,7 +4,7 @@ module com.jwebmp.plugins.d3 {
 	exports com.jwebmp.plugins.d3;
 
 	requires com.jwebmp.core;
-	requires com.guicedee.logmaster;
+	
 
 	requires jakarta.validation;
 	requires com.guicedee.guicedinjection;
